@@ -1,0 +1,32 @@
+.testimonial-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin: 15px;
+    height: 100%;
+}
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    object-fit: cover;
+    border: 4px solid #e0f2ef;
+}
+.stars {
+    color: #fbbc04;
+    margin-bottom: 15px;
+}
+.testimonial-text {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #198754;
+    border-radius: 50%;
+    padding: 15px;
+}

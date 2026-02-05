@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+:root{
+	--color-vn1:      		    #1abc9c		               ; /* verde */
+    --color-vn2:      		    #cec               ;
+	--color-bn1:      		    #ffffff		               ;
+	--color-bn2:      		    #fefefe		               ;
+    --color-bn3:                #cecece                       ; 
+	--color-nn1:      		    #000000		               ;
+	--color-nn2:      		    #333333			           ; 
+	--color-gn1:      		    #808080			           ;
+	--color-gn2:      		    #444444			           ;
+    --color-an1:                #14f                          ;
+    --color-an2:                #48f                          ;
+    --color-an3:                #27f                          ; 	
+    --color-an4:                #abf                          ;
+    --default-font:             "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font:             "Montserrat", sans-serif;
+}	
+*{
+	margin: 					0								;
+	padding: 					0								;
+	box-sizing: 				border-box 						;
+}
+body{
+	background-color: 		    var(--color-an4)				;
+    color:                      var(--color-nn1)                ;
+    font-family:                var(--default-font)             ;
+    font-size:                  1rem                            ;
+}
+header{
+    position:                   relative                        ;
+}
+footer {
+    background-color: 		    var(--color-gn1)			    ;
+    text-align: 			    center 						    ;
+    padding: 				    20px 						    ;
+    font-weight: 			    bold 						    ;
+}
+.separa{
+    padding: 				    10vh 0 0 0					    ;
+}
+.titulo{
+    font-size:                  34px                            ;
+    font-weight: 			    700							    ;
+	letter-spacing: 		    1px							    ;
+	text-transform: 		    uppercase 					    ;
+}
+.subtitulo{
+    font-size:                  17px                            ;
+}
+.separador{
+    display:                    flex                            ;
+    justify-content:            center                          ;
+    gap:                        10px                            ;
+    margin-top:                 1rem                            ;
+    margin-bottom:              2rem                            ;
+}
+/* ------------------------    seccion sec01 ------------------------  */
+#sec01{
+    background-color:           var(--color-vn1)                ;
+    color:                      var(--color-bn1)                ;
+    padding:                    4px 0                           ;
+}
+#sec01 .info{
+    display:                    flex                            ;
+    gap:                        20px                            ;
+}
+#sec01 a{
+    color:                      var(--color-bn1)                ;
+    text-decoration:            none                            ;
+}
+#sec01 a:hover{
+    text-decoration:            underline                       ;
+}
+#sec01 .social{
+    background-color:           transparent                     ;
+    font-size:                  1.2rem                          ;
+}
+#sec01 .social i{
+    margin-left:                10px                            ;
+    padding:                    05px 5px                        ;
+    display:                    inline-block                    ;
+    border-radius:              50%                             ;
+}
+#sec01 .social i:hover{
+    background-color:           var(--color-bn1)                ;  
+    color:                      var(--color-vn1)                ;  
+}
+/* ------------------------    seccion sec02 ------------------------  */
+#sec02{
+    background-color:           var(--color-bn2)                ;
+    padding:                    5px 0                           ;
+    position:                   sticky                          ;
+    top:                        00px                            ;
+    z-index:                    30                              ;
+}
+#sec02 .colorbar{
+    background-color:          inherit                          ;
+}
+#sec02 .logo{
+    font-size:                  34px                            ;
+    font-weight:                bold                            ;
+    padding:                    5px 0                           ;
+}
+#sec02 .active{
+    color:                      var(--color-vn1)                ;
+}
+#sec02 .nav-item:hover a{
+    color:                      var(--color-vn1)                ;
+}
+/* ------------------------    seccion 3 ------------------------  */
+#sec03{
+    background-color:           var(--color-bn3)                ;
+    padding-bottom:             40px                            ;
+}
+#sec03 h1{
+    font-size:                  2.5rem                          ;
+}
+.logo{
+    font-size:                  34px                            ;
+    font-weight:                bold                            ;
+    color:                      var(--color-nn1)                ;
+    padding:                    05px 0                          ;
+}
+#play{
+    color:                      var(--color-vn1)                ;
+    font-size:                  1.6rem                          ;
+}
+#sec03 .btn-success2:hover{
+    color:                      var(--color-vn1)                ;
+}
+.btn{
+    padding:                    13px 20px                       ;
+    margin-top:                 20px                            ;
+}
+#caja01{
+    position:                   relative                        ;
+    width:                      360px                           ;
+    top:                        -70px                           ;
+    left:                       -30px                           ;
+    background-color:           var(--color-bn2)                ;
+    border-radius:              10px                            ;
+}
+.cot{
+    display:                    inline-block                    ;
+    padding:                    20px                            ;
+    font-size:                  14px                            ;
+    color:                      var(--color-gn1)                ;
+}
+#valor1, #valor2{
+    color:                      var(--color-vn1)                ;
+    font-size:                  2rem                            ;
+}
+/* ------------------------    seccion 4 ------------------------  */
+#sec04 i{
+    font-size:                  3rem                            ;
+    color:                      var(--color-vn1)                ;
+    border-radius:              50%                             ;
+    background-color:           var(--color-vn2)                ;
+    padding:                    10px                            ;
+}
+#sec04 h4{
+    margin:                     1.5rem 0                        ;
+}
+#sec04 .targ01:hover i {
+    background-color:           var(--color-vn1)                ;
+    color:                      var(--color-bn2)                ;
+}  
+#sec04 .targ01:hover{
+    border-top:                 4px solid transparent           ;
+}
+/* ------------------------    seccion 5 ------------------------  */
+.indica{
+    font-size:                  2rem                            ;
+    color:                      var(--color-vn1)                ;
+    border-radius:              50%                             ;
+    background-color:           var(--color-vn2)                ;
+    padding:                    20px                            ;
+}
+.card-body{
+    margin:                     2rem 0                          ;
+}
+.titulo01{
+    margin:                     2rem 0                          ;
+}
+#sec05 p{
+    margin-bottom:              3rem                            ;
+}
+#sec05 .card:hover{
+    border-top:                 4px solid var(--color-vn1)      ;
+}
+#sec05 .card:hover i:not(.exclu){
+    background-color:           var(--color-vn1)                ;
+    color:                      var(--color-bn2)                ;
+}
+/* ------------------------    seccion 6 ------------------------  */
+#sec06{
+    background-color:           var(--color-bn3)                ;
+}
+.separador{
+    display:                    flex                            ;
+    justify-content:            center                          ;
+    gap:                        05px                            ;
+}
+#sec06 .linea{
+    border:                     1px solid var(--color-gn1)      ;
+    width:                      50px                            ;
+    margin:                     20px  0  40px 0                 ;        
+}   
+#sec06 .linea2{
+    border:                     1px solid var(--color-vn1  )    ;
+}  
+#caja02{
+    position:                   relative                        ;
+    width:                      fit-content                     ;
+    top:                        -08rem                          ;
+    left:                       2.5rem                          ;
+    background-color:           var(--color-bn2)                ;
+    border-radius:              10px                            ;
+}
+.cot01{
+    display:                    inline-block                    ;
+    padding:                    20px 15px                       ;
+    font-size:                  14px                            ;
+    color:                      var(--color-gn1)                ;
+}
+.valor1{
+    font-size:                  1.2rem                          ;
+    font-weight:                bold                            ;
+}   
+.valor2{
+    font-size:                 0.9rem                           ;
+}
+.valor3{
+    color:                      var(--color-vn1)                ;
+    font-size:                  2.3rem                          ;
+}    
+#sec06 #caja03,
+#sec06 #caja04,
+#sec06 #caja05{
+    background-color:           transparent                     ;
+    width:                      fit-content                     ;
+    padding:                    0 10px                          ;
+    margin-top:                 20px                            ;
+}
+#sec06 :is(#caja03, #caja04, #caja05) > div:first-child {
+    color:                      var(--color-vn1)                ;
+    font-size:                  2.1rem                          ;
+    font-weight:                100                             ;
+    letter-spacing:             1.3px                           ;
+}
+#sec06 :is(#caja03, #caja04, #caja05) > div:last-child {
+    text-transform:             uppercase                       ;
+    font-size:                  0.8rem                          ;
+    color:                      var(--color-gn2)                ;
+}
+#sec06 #ref01{
+    margin-top:                 3rem                            ;
+    font-size:                  0.9rem                          ;
+    color:                      var(--color-nn2)                ;
+}
+#sec06 #ref01 a{
+    text-decoration:            none                            ;
+    color:                      var(--color-nn2)                ;
+}
+#sec06 #ref01 a:hover{
+    color:                      var(--color-vn1)                ;
+}
+/* ------------------------    seccion 7 ------------------------  */
+#sec07{
+    background-color:           transparent                         ;
+}
+#sec07 .level {
+    font-size:                  12px                                ;
+    font-weight:                600                                 ;
+    color:                      #1abc9c                             ;
+    letter-spacing:             1px                                 ;
+}
+#sec07 .title-line {
+    width:                      120px                               ;
+    height:                     1px                                 ;
+    background-color:           #ddd                                ;
+    margin:                     15px                                ;
+    position:                   relative                            ;
+}
+#sec07 .title-line span {
+    width:                      40px;
+    height:                     3px;
+    background-color:           #00c389;
+    position:                   absolute;
+    left:                       50%;
+    top:                        -1px;
+    transform:                  translateX(-50%);
+}
+#sec07 h4{
+    margin-top:                 1rem                                ;
+}
+#sec07 h5{
+    text-align:                 center                              ;
+    font-size:                  0.95rem                             ;
+    margin-bottom:              6rem                                ;
+}
+#sec07 i{
+    font-size:                  3rem;
+}
+#sec07 i:hover{
+    color:                      var(--color-vn1)                    ;
+}
+#sec07 .separa07{
+    display:                    flex                            ;
+    gap:                        20px                            ;
+}
+.linea01{
+    width:                      65%                             ;
+    height:                     3px                             ;
+    background:                 #eaeaea                         ;
+    margin:                     10px 0 20px                     ;
+    position:                   relative                        ;
+}
+.linea01::after {
+    content:                    ""                              ;
+    width:                      80%                             ;
+    height:                     100%                            ;
+    background:               #1abc9c                         ;
+    position:                   absolute                        ;
+    left:                       0                               ;
+    top:                        0                               ;
+}
+/* ------------------------    seccion 8 ------------------------  */

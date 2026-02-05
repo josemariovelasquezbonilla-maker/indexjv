@@ -1,0 +1,73 @@
+/* CARD */
+.testimonial-card {
+    border-radius: 20px;
+    padding: 30px 20px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin: 15px;
+    height: 100%;
+}
+/* AVATAR */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    object-fit: cover;
+    border: 4px solid #e0f2ef;
+}
+/* STARS */
+.stars {
+    color: #fbbc04;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.testimonial-text {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* CAROUSEL CONTROLS */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #198754;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/* ============================= */
+/* RESPONSIVE LOGIC */
+/* ============================= */
+
+/* < 480px → 1 card */
+@media (max-width: 479px) {
+    .testimonial-item {
+        display: none;
+    }
+
+    .testimonial-item:nth-child(1) {
+        display: block;
+    }
+}
+
+/* 480px - 799px → 2 cards */
+@media (min-width: 480px) and (max-width: 799px) {
+    .testimonial-item {
+        display: none;
+    }
+
+    .testimonial-item:nth-child(1),
+    .testimonial-item:nth-child(2) {
+        display: block;
+    }
+}
+
+/* ≥ 800px → 3 cards */
+@media (min-width: 800px) {
+    .testimonial-item {
+        display: block;
+    }
+}
